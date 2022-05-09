@@ -7,7 +7,7 @@ with open("requirements.txt", "r") as fh:
 
 setuptools.setup(
     name="random-points-on-polygon",
-    version="0.0.2",
+    version="0.0.3",
     author="Mauro Saladino",
     author_email="maurosaladino7@gmail.com",
     url="https://github.com/maurosaladino/random-points-on-polygon",
