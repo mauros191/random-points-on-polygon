@@ -35,6 +35,27 @@ Get Polygon (or MultiPolygon) as GeoJSON
 geojson_output: dict = pg.polygon_as_geojson()
 ```
 
+## Create a Polygon from GeoJSON
+You can create a Polygon/MultiPolygon from GeoJSON with Shapely:
+
+```python
+from shapely.geometry import shape
+
+POLYGON_GEOJSON = {
+    "type": "Polygon",
+    "coordinates": [
+        [
+            [-73.9932632446289, 40.737892702684064],
+            [-73.9815902709961, 40.743355347975395],
+            [-73.96476745605469, 40.76650157923057],
+            [-73.99463653564453, 40.762341053140275],
+            [-73.9932632446289, 40.737892702684064],
+        ]
+    ],
+}
+
+p = shape(POLYGON_GEOJSON)
+```
 ## Graphically view the result
 You can copy and paste the ```geojson_output``` content into [geojson.io](https://geojson.io) to graphically view the result
 
