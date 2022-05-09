@@ -9,9 +9,6 @@ From [PyPI](https://pypi.org/project/random-points-on-polygon/) directly:
 ```
 pip install random-points-on-polygon
 ```
-## Graphically view the result
-You can copy and paste the ```geojson_output``` content into [geojson.io](https://geojson.io) to graphically view the result
-
 ## Examples
 
 Generate 10 random points on a polygon
@@ -28,8 +25,6 @@ Get Polygon (or MultiPolygon) including generated points as GeoJSON.
 geojson_output: dict = pg.geojson()
 ```
 
-![geojson](https://github.com/maurosaladino/random-points-on-polygon/blob/main/public/geojson.jpg?raw=true)
-
 Get generated points as GeoJSON
 ```python
 geojson_output: dict = pg.points_as_geojson()
@@ -40,7 +35,10 @@ Get Polygon (or MultiPolygon) as GeoJSON
 geojson_output: dict = pg.polygon_as_geojson()
 ```
 
+## Graphically view the result
+You can copy and paste the ```geojson_output``` content into [geojson.io](https://geojson.io) to graphically view the result
 
+<img src="https://github.com/maurosaladino/random-points-on-polygon/blob/main/public/geojson.jpg?raw=true" width="350" height="350">
 
 
 
