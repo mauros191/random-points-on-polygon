@@ -56,8 +56,8 @@ class PointsGenerator:
             {"type": "Feature", "properties": {}, "geometry": mapping(feature)}
         )
 
-    def surface_as_geojson(self) -> str:
-        """Get surface (without points) as GeoJSON"""
+    def polygon_as_geojson(self) -> str:
+        """Get Polygon (or MultiPolygon) without generated points as GeoJSON"""
         geojson: dict = PointsGenerator.geojson_boilerplate()
         self.add_feature(geojson, self.surface)
         return json.dumps(geojson, indent=2)
@@ -70,7 +70,7 @@ class PointsGenerator:
         return json.dumps(geojson, indent=2)
 
     def geojson(self) -> str:
-        """Get surface (including generated points) as GeoJSON"""
+        """Get Polygon (or MultiPolygon) including generated points as GeoJSON"""
         geojson: dict = PointsGenerator.geojson_boilerplate()
         self.add_feature(geojson, self.surface)
         for point in self.points:
