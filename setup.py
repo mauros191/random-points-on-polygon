@@ -10,6 +10,7 @@ setuptools.setup(
     version="0.0.1",
     author="Mauro Saladino",
     author_email="maurosaladino7@gmail.com",
+    url="https://github.com/maurosaladino/random-points-on-polygon"
     description="A Python library to generate random points on Polygon or MultiPolygon",
     long_description=long_description,
     long_description_content_type="text/x-rst",

@@ -51,9 +51,7 @@ class PointsGenerator:
                 self.points.append(random_point)
                 n -= 1
 
-    def add_feature(
-        self, geojson_: dict, feature: Union[MultiPolygon, Point, Polygon]
-    ) -> None:
+    def add_feature(self, geojson_: dict, feature: Union[MultiPolygon, Point, Polygon]) -> None:
         geojson_["features"].append(
             {"type": "Feature", "properties": {}, "geometry": mapping(feature)}
         )
