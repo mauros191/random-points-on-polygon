@@ -28,7 +28,7 @@ Get Polygon (or MultiPolygon) including generated points as GeoJSON.
 geojson_output: dict = pg.geojson()
 ```
 
-![geojson](https://github.com/maurosaladini/random-points-on-polygon/blob/main/geojson.png?raw=true)
+![geojson](https://github.com/maurosaladino/random-points-on-polygon/blob/main/public/geojson.jpg?raw=true)
 
 Get generated points as GeoJSON
 ```python
