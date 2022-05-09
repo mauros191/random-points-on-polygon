@@ -12,13 +12,13 @@ pip install random-points-on-polygon
 
 ## Examples
 
-Generate 50 points on Polygon POLYGON_SAMPLE_2
+Generate 10 random points on a polygon
 ```python
 from random_points_on_polygon import PointsGenerator
-from random_points_on_polygon.samples import POLYGON_SAMPLE_2
+from random_points_on_polygon.samples import POLYGON_SAMPLE_1
 
-pg: PointsGenerator = PointsGenerator(POLYGON_SAMPLE_2)
-pg.generate(50)
+pg: PointsGenerator = PointsGenerator(POLYGON_SAMPLE_1)
+pg.generate(10)
 ```
 
 Get Polygon (or MultiPolygon) including generated points as GeoJSON. 
@@ -36,8 +36,8 @@ Get Polygon (or MultiPolygon) as GeoJSON
 geojson_output: dict = pg.polygon_as_geojson()
 ```
 
-## Show the result
-You can copy and paste the content of ```geojson_output``` in [geojson.io](https://geojson.io) to show the result
+## Graphically view the result
+You can copy and paste the ```geojson_output``` content into [geojson.io](https://geojson.io) to graphically view the result
 
 
 
