@@ -37,7 +37,7 @@ geojson_output: dict = pg.polygon_as_geojson()
 ```
 
 ## Show the result
-You can copy and paste the content of ```geojson_output``` in [geojson.io](geojson.io) to show the result
+You can copy and paste the content of ```geojson_output``` in [geojson.io](https://geojson.io) to show the result
 
 
 
