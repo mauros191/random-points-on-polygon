@@ -34,8 +34,8 @@ Get Polygon (or MultiPolygon) as GeoJSON
 ```python
 geojson_output: dict = pg.polygon_as_geojson()
 ```
-## Graphically view the result
-You can copy and paste the ```geojson_output``` content into [geojson.io](https://geojson.io) to graphically view the result
+## Display result graphically
+You can copy and paste the ```geojson_output``` content into [geojson.io](https://geojson.io) to display result graphically
 
 <img src="https://github.com/maurosaladino/random-points-on-polygon/blob/main/public/geojson.jpg?raw=true" width="450" height="487">
 
