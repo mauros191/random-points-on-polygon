@@ -40,7 +40,7 @@ You can copy and paste the ```geojson_output``` content into [geojson.io](https:
 <img src="https://github.com/maurosaladino/random-points-on-polygon/blob/main/public/geojson.jpg?raw=true" width="450" height="487">
 
 ## Create a Polygon from GeoJSON
-You can create a Polygon/MultiPolygon from GeoJSON with Shapely:
+You can create a Polygon/MultiPolygon from GeoJSON using Shapely:
 
 ```python
 from shapely.geometry import shape
